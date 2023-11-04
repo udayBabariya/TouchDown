@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7823C8152AF63E4C00B05881 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7823C8142AF63E4C00B05881 /* ProductDetailView.swift */; };
+		7823C8172AF63F4900B05881 /* NavigationBarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7823C8162AF63F4900B05881 /* NavigationBarDetailView.swift */; };
+		7823C8192AF6404400B05881 /* HeaderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7823C8182AF6404400B05881 /* HeaderDetailView.swift */; };
+		7823C81B2AF640CB00B05881 /* TopPartDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7823C81A2AF640CB00B05881 /* TopPartDetailView.swift */; };
 		782A08622AF22FFF00526485 /* TouchDownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A08612AF22FFF00526485 /* TouchDownApp.swift */; };
 		782A08642AF22FFF00526485 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A08632AF22FFF00526485 /* ContentView.swift */; };
 		782A08662AF2300000526485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782A08652AF2300000526485 /* Assets.xcassets */; };
@@ -36,6 +40,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7823C8142AF63E4C00B05881 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		7823C8162AF63F4900B05881 /* NavigationBarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarDetailView.swift; sourceTree = "<group>"; };
+		7823C8182AF6404400B05881 /* HeaderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetailView.swift; sourceTree = "<group>"; };
+		7823C81A2AF640CB00B05881 /* TopPartDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPartDetailView.swift; sourceTree = "<group>"; };
 		782A085E2AF22FFF00526485 /* TouchDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		782A08612AF22FFF00526485 /* TouchDownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchDownApp.swift; sourceTree = "<group>"; };
 		782A08632AF22FFF00526485 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -176,6 +184,10 @@
 		782A087D2AF231FA00526485 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				7823C8142AF63E4C00B05881 /* ProductDetailView.swift */,
+				7823C8162AF63F4900B05881 /* NavigationBarDetailView.swift */,
+				7823C8182AF6404400B05881 /* HeaderDetailView.swift */,
+				7823C81A2AF640CB00B05881 /* TopPartDetailView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -274,6 +286,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				782A08642AF22FFF00526485 /* ContentView.swift in Sources */,
+				7823C8192AF6404400B05881 /* HeaderDetailView.swift in Sources */,
+				7823C81B2AF640CB00B05881 /* TopPartDetailView.swift in Sources */,
 				78E28C3A2AF3CF5600E85F1E /* CodableBundleExtension.swift in Sources */,
 				78E28C362AF3C2C700E85F1E /* LogoView.swift in Sources */,
 				782A08832AF232F400526485 /* FooterView.swift in Sources */,
@@ -281,11 +295,13 @@
 				783664522AF49F1900F65EE9 /* ProductItemView.swift in Sources */,
 				78D5FB8B2AF6375C00E45877 /* BrandGridView.swift in Sources */,
 				782A08622AF22FFF00526485 /* TouchDownApp.swift in Sources */,
+				7823C8152AF63E4C00B05881 /* ProductDetailView.swift in Sources */,
 				782A08812AF2323500526485 /* Constant.swift in Sources */,
 				78E28C442AF3D86B00E85F1E /* CategoryGridView.swift in Sources */,
 				78E28C402AF3D5AD00E85F1E /* CategoryModel.swift in Sources */,
 				78E28C342AF3BEC800E85F1E /* NavigationBarView.swift in Sources */,
 				78E28C462AF3DC7000E85F1E /* SectionView.swift in Sources */,
+				7823C8172AF63F4900B05881 /* NavigationBarDetailView.swift in Sources */,
 				78D5FB892AF636B900E45877 /* BrandItemView.swift in Sources */,
 				78E28C422AF3D68500E85F1E /* CategoryItemView.swift in Sources */,
 				78E28C3E2AF3D11600E85F1E /* FeaturedTabView.swift in Sources */,
