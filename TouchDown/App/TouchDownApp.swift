@@ -11,7 +11,8 @@ import SwiftUI
 struct TouchDownApp: App {
     var body: some Scene {
         WindowGroup {
-            ProductDetailView()
+            ContentView()
+                .environmentObject(Shop())
         }
     }
 }

@@ -10,10 +10,13 @@ import SwiftUI
 struct AddToCartDetalView: View {
     
     //MARK: - Properties
+    @EnvironmentObject var shop: Shop
     
     //MARK: - Body
     var body: some View {
-        Button(action: {}, label: {
+        Button(action: {
+            feedback.impactOccurred()
+        }, label: {
             Spacer()
             Text("Add To Cart".uppercased())
                 .font(.system(.title2, design: .rounded))
@@ -23,9 +26,9 @@ struct AddToCartDetalView: View {
         })
         .padding(15)
         .background(
-            Color(red: sampleProduct.red,
-                  green: sampleProduct.green,
-                  blue: sampleProduct.blue)
+            Color(red: shop.selectedProduct?.red ?? 0,
+                  green:  shop.selectedProduct?.green ?? 0,
+                  blue:  shop.selectedProduct?.blue ?? 0)
         )
         .clipShape(Capsule())
     }

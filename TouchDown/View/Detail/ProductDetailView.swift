@@ -10,6 +10,7 @@ import SwiftUI
 struct ProductDetailView: View {
     
     //MARK: - Properties
+    @EnvironmentObject var shop: Shop
     
     //MARK: - Body
     var body: some View {
@@ -38,7 +39,7 @@ struct ProductDetailView: View {
                 
                 // Description
                 ScrollView(.vertical, showsIndicators: false) {
-                    Text(sampleProduct.description)
+                    Text(shop.selectedProduct?.description ?? "")
                         .font(.system(.body, design: .rounded))
                         .foregroundStyle(.gray)
                         .multilineTextAlignment(.leading)
@@ -64,9 +65,9 @@ struct ProductDetailView: View {
         .zIndex(0)
         .ignoresSafeArea(.all, edges: .all)
         .background(
-            Color(red: sampleProduct.red,
-                  green: sampleProduct.green,
-                  blue: sampleProduct.blue)
+            Color(red: shop.selectedProduct?.red ?? 0,
+                  green: shop.selectedProduct?.green ?? 0,
+                  blue: shop.selectedProduct?.blue ?? 0)
         ).ignoresSafeArea(.all, edges: .all)
     }
 }
